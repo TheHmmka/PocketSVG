@@ -443,7 +443,7 @@ CF_RETURNS_RETAINED CGPathRef pathDefinitionParser::parse()
     NSLog(@"d=%@", attr);
 #endif
     _path = CGPathCreateMutable();
-    CGPathMoveToPoint(_path, NULL, 0, 0);
+//    CGPathMoveToPoint(_path, NULL, 0, 0);
 
     NSScanner * const scanner = [NSScanner scannerWithString:_definition];
     static NSCharacterSet *separators, *commands;
